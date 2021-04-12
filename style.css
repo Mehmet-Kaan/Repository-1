@@ -1,0 +1,186 @@
+:root{
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+}
+#wrapper {
+    height: 100vh;
+    width: 100vw;
+    margin-top: 5px;
+}
+
+.schemas{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.schemas > div {
+    height: 100px;
+    width: 250px;
+    border: 1px solid black;
+    margin-left: 2px;
+    margin-right: 2px;
+
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.schemas > div > div {
+   display: flex;
+   height: 100%;
+   width: 100%;
+}
+
+.schemas > div:hover {
+    box-shadow: 1px 0px 7px 1px #888888;
+    cursor: pointer;
+}
+
+.schemas > .active{
+    box-shadow: 1px 0px 7px 1px #888888;
+}
+
+p.SchemaP1 {
+  position: absolute;
+  top: 35px;
+  left: 10vw;
+}
+p.SchemaP2 {
+  position: absolute;
+  top: 35px;
+  left: 35vw;
+}
+p.SchemaP3 {
+  position: absolute;
+  top: 35px;
+  left: 60vw;
+}
+p.SchemaP4 {
+  position: absolute;
+  top: 35px;
+  left: 85vw;
+}
+
+
+#shows {
+    background-color: indianred;
+    margin-top: 5px;
+    height: 100%;
+
+    position: relative;
+}
+
+button{
+    height: 50px;
+    width: 230px;
+
+    opacity: 0.5;
+    background-color: white;
+    border: none;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#bigger {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    z-index: 10;
+}
+
+#stop {
+    position: absolute;
+    top: 5px;
+    left: calc(50% - 115px);
+    z-index: 10;
+}
+
+#smaller {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 10;
+}
+
+#playground{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+#things {
+    height: 250px;
+    width: 250px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#circle {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    background-color: indianred;
+    position: absolute;
+    z-index: 5;
+
+    transition: height 10s, width 10s;
+}
+
+#kvadrat {
+    height: 180px;
+    width: 180px;
+    background-color: orange;
+    position: absolute;
+    z-index: 1;
+
+    transition: height 10s, width 10s;
+}
+
+#kvadrat2 {
+    height: 165px;
+    width: 165px;
+
+    background-color: yellow;
+    position: absolute;
+    z-index: 2;
+
+    transition: height 10s, width 10s;
+}
+
+
+#kvadrat3 {
+    height: 145px;
+    width: 145px;
+
+    background-color: wheat;
+    position: absolute;
+    z-index: 3;
+
+    transition: height 10s, width 10s;
+}
+
+#roteratKvadrat {
+    height: 180px;
+    width: 180px;
+    transform: rotate(45deg);
+    background-color: gold;
+    position: absolute;
+    z-index: 4;
+
+    transition: height 10s, width 10s;
+}
+
